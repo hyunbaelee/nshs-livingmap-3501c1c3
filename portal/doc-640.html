@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><rect width=%2216%22 height=%2216%22 fill=%22%230D2240%22/></svg>">
+<title>와이어프레임 · 심의역 검토 화면 (심의 AI MVP) · NSHS 포털</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><header><div class="wrap"><a class="home" href="index.html">NS홈쇼핑 AI 심의 · 산출물 포털</a></div></header>
+<nav class="wrap crumb"><a href="index.html">홈</a> › <span>640 화면설계서</span> › <b>와이어프레임 · 심의역 검토 화면 (심의 AI MVP)</b></nav>
+<main class="wrap">
+<h1>와이어프레임 · 심의역 검토 화면 (심의 AI MVP)</h1><div class="meta"><span class="badge id">DOC-640</span><span class="badge">640 화면설계서</span><span class="badge">범위 5.1.3.1</span><span class="badge v">v0.1</span><span class="badge st">&lt;가설&gt;</span></div><div class="refline"><b>이 문서가 참조:</b> <a class="chip" href="doc-5.1.3.html#A-5.1.3.1">A-5.1.3.1</a><a class="chip" href="doc-620.html#F-01">F-01</a><a class="chip" href="doc-620.html#F-02">F-02</a><a class="chip" href="doc-620.html#F-03">F-03</a><a class="chip" href="doc-620.html#F-04">F-04</a><a class="chip" href="doc-620.html#F-06">F-06</a><a class="chip" href="doc-620.html#F-07">F-07</a><a class="chip" href="doc-620.html#F-08">F-08</a><a class="chip" href="doc-620.html#F-11">F-11</a><a class="chip" href="doc-620.html#F-12">F-12</a><a class="chip" href="doc-620.html#F-13">F-13</a><span class="chip ext" title="외부: PRD 60 (개발트랙, Confluence 1212419)">U-2<small>외부</small></span><span class="chip ext" title="외부: PRD 60 (개발트랙, Confluence 1212419)">U-3<small>외부</small></span></div><article><h1>63 와이어프레임 · 심의역 검토 화면 (심의 AI MVP) — harmonized v0.1</h1>
+<blockquote>라이브 페이지 1769477 승계 + 브레드크럼·유형축 정합. 상태 <span class="tag">&lt;설계 가설&gt;</span>. <code><span class="tag">&lt;신규&gt;</span></code>=이번 정합 추가.<br>심의역 검토·확정 화면(<a class="chip" href="doc-620.html#F-06">F-06</a>), PRD <span class="chip ext" title="외부: PRD 60 (개발트랙, Confluence 1212419)">U-2<small>외부</small></span>·<span class="chip ext" title="외부: PRD 60 (개발트랙, Confluence 1212419)">U-3<small>외부</small></span> ↔ 액티비티 5.1.3.1. <b>MVP = 원고(텍스트) 검토 화면.</b></blockquote>
+<h2>브레드크럼</h2>
+<table><thead><tr><th>Mega</th><th>5. 심의</th><th>Main</th><th>5.1 사전심의</th></tr></thead><tbody><tr><td><b>대상</b></td><td>5.1.3.1 사람 최종 검토·확정</td><td><b>유형</b></td><td>화면설계(와이어프레임, MVP)</td></tr></tbody></table>
+<p>연계: <a href="https://aioffering1ns.atlassian.net/wiki/spaces/NA/pages/1212419" target="_blank" rel="noopener">PRD 60 ⧉</a> · <a href="https://aioffering1ns.atlassian.net/wiki/spaces/NA/pages/2457602" target="_blank" rel="noopener">기능정의서 61 ⧉</a> · <a href="https://aioffering1ns.atlassian.net/wiki/spaces/NA/pages/2359297" target="_blank" rel="noopener">프로세스 5.1.3 ⧉</a></p>
+<h2>1. 화면 구성 요소 (기존 승계 + 유형 명시)</h2>
+<table><thead><tr><th>영역</th><th>요소</th><th>내용 · 동작</th><th>연계</th></tr></thead><tbody><tr><td>헤더</td><td>심의 대상 정보</td><td>대상명 · <b>유형 배지(원고/영상/상품)</b> <code><span class="tag">&lt;신규&gt;</span></code> · 편성 · 접수일시 · 리스크 태그</td><td><a class="chip" href="doc-620.html#F-01">F-01</a> · <a class="chip" href="doc-620.html#F-08">F-08</a> · <a class="chip" href="doc-620.html#F-11">F-11</a></td></tr><tr><td>좌 패널</td><td>AI 판정초안</td><td>판정 배지(적합/위반/조건부) · 신뢰도 게이지 · 판정 사유</td><td><a class="chip" href="doc-620.html#F-03">F-03</a></td></tr><tr><td>우 패널</td><td>근거 리스트</td><td>인용 규정 조항 · 유사 판례 카드(유사도·출처), 클릭 시 원문</td><td><a class="chip" href="doc-620.html#F-04">F-04</a></td></tr><tr><td>중앙</td><td>대상 미리보기</td><td>심의 대상 프리뷰, 위반 의심 구간 하이라이트</td><td><a class="chip" href="doc-620.html#F-01">F-01</a></td></tr><tr><td>하단 액션</td><td>확정 컨트롤</td><td>［승인］［수정 후 확정］［에스컬레이션］ + 사유 입력(필수)</td><td><a class="chip" href="doc-620.html#F-06">F-06</a> · <a class="chip" href="doc-620.html#F-07">F-07</a></td></tr><tr><td>상태</td><td>라우팅 표시</td><td>자동초안/보강/에스컬레이션 경로 · 재라우팅 이력</td><td><a class="chip" href="doc-620.html#F-02">F-02</a></td></tr></tbody></table>
+<h2>2. 유형별 화면 변형 <code><span class="tag">&lt;신규·가설&gt;</span></code> (Post-MVP)</h2>
+<table><thead><tr><th>유형</th><th>중앙 미리보기 변형</th><th>추가 요소</th></tr></thead><tbody><tr><td><b>원고·기획</b></td><td>원고/큐시트 텍스트 + 위반구간 하이라이트</td><td>(MVP 기본)</td></tr><tr><td><b>영상·완성물</b></td><td>영상 플레이어 + <b>STT 자막 싱크</b>(멘트 클릭→해당 구간 이동 <code>[BM]</code>) + 위반 타임코드</td><td><a class="chip" href="doc-620.html#F-12">F-12</a></td></tr><tr><td><b>상품표시·광고</b></td><td>상품 이미지 + <b>OCR 추출 텍스트 오버레이</b></td><td><a class="chip" href="doc-620.html#F-13">F-13</a></td></tr></tbody></table>
+<blockquote><code>[BM]</code> SK스토아/홈앤쇼핑 PI: &quot;멘트 클릭 시 영상 위치 이동&quot;, 데이터방송 STT 자막. → 영상 유형 열릴 때 중앙 프리뷰만 교체, 좌·우·하단 액션은 공통 재사용.</blockquote>
+<h2>3. 상호작용 원칙 (기존 승계)</h2>
+<ul><li>확정 없이는 통보 불가 — 사유 입력 없으면 확정 버튼 비활성 (5.1.3 Rule)</li><li>신뢰도·근거 부족한 초안은 시각적 경고</li><li>고위험·신유형은 에스컬레이션 기본 추천</li></ul>
+<h2>4. 목업 다이어그램</h2>
+<p>원천: <code>diagrams\cross-와이어프레임\nshs_wireframe.drawio</code> (심의역 검토 화면). 유형별 변형은 Post-MVP 시 탭 추가.</p></article>
+</main>
+<footer class="wrap">registry 기반 자동 생성 (빌드가 재생성 — 직접 편집 금지) · 열람 전용</footer>
+</body></html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><rect width=%2216%22 height=%2216%22 fill=%22%230D2240%22/></svg>">
+<title>로드맵·이행계획 · NSHS 포털</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><header><div class="wrap"><a class="home" href="index.html">NS홈쇼핑 AI 심의 · 산출물 포털</a></div></header>
+<nav class="wrap crumb"><a href="index.html">홈</a> › <span>680 로드맵이행계획</span> › <b>로드맵·이행계획</b></nav>
+<main class="wrap">
+<h1>로드맵·이행계획</h1><div class="meta"><span class="badge id">DOC-680</span><span class="badge">680 로드맵이행계획</span><span class="badge">범위 전체</span><span class="badge v">v0.1</span><span class="badge st">&lt;가설&gt;</span></div><div class="refline"><b>이 문서가 참조:</b> <a class="chip" href="doc-630.html#D-02">D-02</a><a class="chip" href="doc-620.html#F-11">F-11</a><a class="chip" href="doc-620.html#F-12">F-12</a><a class="chip" href="doc-620.html#F-13">F-13</a><a class="chip" href="doc-660.html#R-01">R-01</a><a class="chip" href="doc-660.html#R-02">R-02</a><a class="chip" href="doc-660.html#R-03">R-03</a><a class="chip" href="doc-660.html#R-09">R-09</a><a class="chip" href="doc-670.html#T-01">T-01</a><a class="chip" href="doc-670.html#T-02">T-02</a><a class="chip" href="doc-670.html#T-03">T-03</a><a class="chip" href="doc-670.html#T-04">T-04</a><a class="chip" href="doc-670.html#T-05">T-05</a></div><article><h1>68 로드맵·이행계획 — v0.1</h1>
+<blockquote>신규 인도물(680). <code>analysis/심의유형-멀티모달AI-로드맵.md</code>(가설)를 인도물 레벨로 승격 + T-ID(67) 매핑. 상태 <b><span class="tag">&lt;설계 가설&gt;</span></b> — 시점·기간은 오너/현업 확정 전 상대 단계로만 표기.</blockquote>
+<h2>브레드크럼</h2>
+<table><thead><tr><th>Mega</th><th>5. 심의</th><th>Main</th><th>5.1 사전심의 (+5.4 연계)</th></tr></thead><tbody><tr><td><b>대상</b></td><td>MVP → Post-MVP 전개</td><td><b>유형</b></td><td>로드맵·이행계획</td></tr></tbody></table>
+<h2>1. 단계 로드맵</h2>
+<table><thead><tr><th>단계</th><th>범위</th><th>과제(T)</th><th>완료 게이트</th></tr></thead><tbody><tr><td><b>P0 기반</b></td><td>지식자산 정비 — 규정·조항 적재, 판례 이력 스키마, 소스 레지스트리 연계(5.4)</td><td>(<a class="chip" href="doc-670.html#T-01">T-01</a> 선행)</td><td>규정 커버리지 기준선 · D 자산 정의 확정</td></tr><tr><td><b>P1 MVP</b> ★</td><td><b>원고(텍스트) 사전심의</b> — AI 선분석·판정초안 + 검토 워크벤치 + 접수 자동화 + 통보·이력</td><td><a class="chip" href="doc-670.html#T-01">T-01</a>·<a class="chip" href="doc-670.html#T-02">T-02</a>·<a class="chip" href="doc-670.html#T-03">T-03</a>(완결성)·<a class="chip" href="doc-670.html#T-04">T-04</a></td><td>파일럿: T_auto·N_max 캘리브레이션(<a class="chip" href="doc-660.html#R-02">R-02</a>·<a class="chip" href="doc-660.html#R-03">R-03</a>) · 오탐/미탐 기준선 · 심의역 검수 워크플로 정착</td></tr><tr><td><b>P2 유형 축</b></td><td>유형 분류·라우팅 활성(<a class="chip" href="doc-620.html#F-11">F-11</a>) — 접수 시 원고/영상/상품 자동 판별</td><td><a class="chip" href="doc-670.html#T-03">T-03</a>(확장)</td><td>분류 정확도 기준선 · 유형 기준 인터뷰 확정(<a class="chip" href="doc-660.html#R-09">R-09</a>)</td></tr><tr><td><b>P3 멀티모달</b></td><td>영상(STT+OCR)·상품표시(OCR) 심의 확장 — 어댑터 추가, 판정엔진 재사용. 영상심의 Sub(가칭 5.1.4) 신설 검토</td><td><a class="chip" href="doc-670.html#T-05">T-05</a></td><td>STT/OCR 정확도 기준선 <code>[BM]</code> · 5.1.4 프로세스 확정</td></tr></tbody></table>
+<p><b>원칙</b>: P1 구조(공통 판정엔진)를 흔들지 않는 확장 — 유형은 어댑터 파라미터(가설 3). 각 단계 진입 전 <b>가설→v1.0 확정</b>(현업 인터뷰) 필수.</p>
+<h2>2. 이행 관점 (3트랙)</h2>
+<table><thead><tr><th>트랙</th><th>P1에서</th><th>P2~P3에서</th></tr></thead><tbody><tr><td><b>조직</b></td><td>심의역 역할 전환: 직접 판정 → <b>초안 검수·확정</b>(<a class="chip" href="doc-660.html#R-01">R-01</a>). RACI 정착(650)</td><td>유형별 담당 재편 검토</td></tr><tr><td><b>데이터</b></td><td>규정·판례 자산 축적(D), 판정 이력 환류 시작(<a class="chip" href="doc-670.html#T-04">T-04</a> → 5.4)</td><td>멀티모달 원천(영상·이미지) 수집 체계</td></tr><tr><td><b>시스템</b></td><td>MVP 개발 트랙(nshs-deliberation)과 F-ID/R-ID 동기 — digital twin 연결 개시</td><td>어댑터(<a class="chip" href="doc-620.html#F-12">F-12</a>·<a class="chip" href="doc-620.html#F-13">F-13</a>) 증설</td></tr></tbody></table>
+<h2>3. 주요 의존·리스크</h2>
+<ul><li>P1 파일럿 없이는 <a class="chip" href="doc-660.html#R-02">R-02</a> 임계 확정 불가 → <b>P1 게이트가 전체 일정의 크리티컬 패스</b>.</li><li>현업 인터뷰 지연 시: 가설 기반 진행 유지하되 v1.0 승격 보류(전 산출물 <code><span class="tag">&lt;가설&gt;</span></code> 배지 유지).</li><li><code>[BM]</code> 벤치마크(홈앤쇼핑 STT/AI/OCR)는 참고이며 우리 도입 수준은 P3 진입 시 재평가.</li></ul>
+<h2>4. 연결</h2>
+<ul><li>T 매핑: 67 PI과제정의서 · R 파라미터: 66 판정로직 · 게이트 수치 정본: 630 데이터정의서(<a class="chip" href="doc-630.html#D-02">D-02</a>).</li></ul>
+<p>*v0.1 · 2026-07-16 — 신규 발행(L-02). analysis 가설의 인도물 승격.*</p></article>
+</main>
+<footer class="wrap">registry 기반 자동 생성 (빌드가 재생성 — 직접 편집 금지) · 열람 전용</footer>
+</body></html>
