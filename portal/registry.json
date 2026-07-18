@@ -4,20 +4,23 @@
       "id": "DOC-5.1.1",
       "type": "프로세스정의서",
       "title": "5.1.1 접수·완결성 확인 — 프로세스 정의서",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "A-5.1.1.1",
         "A-5.1.1.2",
         "A-5.1.1.3"
       ],
-      "refs": []
+      "refs": [
+        "R-07",
+        "R-08"
+      ]
     },
     {
       "id": "DOC-5.1.2",
       "type": "프로세스정의서",
       "title": "5.1.2 규정 적합성 분석·판정 — 프로세스 정의서",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "A-5.1.2.1",
@@ -27,27 +30,36 @@
         "A-5.1.2.5"
       ],
       "refs": [
-        "D-02"
+        "D-02",
+        "R-01",
+        "R-03",
+        "R-04",
+        "R-07"
       ]
     },
     {
       "id": "DOC-5.1.3",
       "type": "프로세스정의서",
       "title": "5.1.3 검토·확정·통보 — 프로세스 정의서",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "A-5.1.3.1",
         "A-5.1.3.2",
         "A-5.1.3.3"
       ],
-      "refs": []
+      "refs": [
+        "R-01",
+        "R-05",
+        "R-06",
+        "R-07"
+      ]
     },
     {
       "id": "DOC-5.1",
       "type": "프로세스정의서",
       "title": "5.1 사전심의 — Main 프로세스 정의서 (overview)",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [],
       "refs": [
@@ -55,14 +67,17 @@
         "U-2",
         "U-3",
         "U-4",
-        "U-5"
+        "U-5",
+        "R-01",
+        "R-04",
+        "R-07"
       ]
     },
     {
       "id": "DOC-620",
       "type": "기능정의서",
       "title": "기능정의서 (심의 AI MVP)",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "F-01",
@@ -91,6 +106,17 @@
         "A-5.1.3.1",
         "A-5.1.3.2",
         "A-5.1.3.3",
+        "D-01",
+        "D-02",
+        "D-03",
+        "D-04",
+        "D-05",
+        "D-06",
+        "D-07",
+        "D-08",
+        "D-09",
+        "D-10",
+        "D-11",
         "U-1",
         "U-2",
         "U-3",
@@ -102,7 +128,7 @@
       "id": "DOC-630",
       "type": "데이터정의서",
       "title": "데이터 플로우 정의 (심의 AI MVP)",
-      "version": "0.2",
+      "version": "0.3",
       "status": "가설",
       "provides": [
         "D-01",
@@ -137,10 +163,12 @@
     {
       "id": "DOC-640",
       "type": "화면설계서",
-      "title": "와이어프레임 · 심의역 검토 화면 (심의 AI MVP)",
-      "version": "0.1",
+      "title": "와이어프레임 · S-01 심의역 검토 화면 (심의 AI MVP)",
+      "version": "0.2",
       "status": "가설",
-      "provides": [],
+      "provides": [
+        "S-01"
+      ],
       "refs": [
         "A-5.1.3.1",
         "F-01",
@@ -153,6 +181,8 @@
         "F-11",
         "F-12",
         "F-13",
+        "R-05",
+        "R-06",
         "U-2",
         "U-3"
       ]
@@ -161,7 +191,7 @@
       "id": "DOC-650",
       "type": "R&R정의서",
       "title": "5.1 R&R 정의서 (통합 RACI)",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [],
       "refs": [
@@ -175,14 +205,15 @@
         "A-5.1.2.5",
         "A-5.1.3.1",
         "A-5.1.3.2",
-        "A-5.1.3.3"
+        "A-5.1.3.3",
+        "R-01"
       ]
     },
     {
       "id": "DOC-660",
       "type": "판정로직정의서",
       "title": "판정로직 정의서 (Rule / AI Logic)",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "R-01",
@@ -203,8 +234,10 @@
         "A-5.1.2.2",
         "A-5.1.2.3",
         "A-5.1.2.4",
+        "A-5.1.2.5",
         "A-5.1.3.1",
         "A-5.1.3.2",
+        "A-5.1.3.3",
         "D-02",
         "F-01",
         "F-02",
@@ -218,14 +251,15 @@
         "F-10",
         "F-11",
         "F-12",
-        "F-13"
+        "F-13",
+        "S-01"
       ]
     },
     {
       "id": "DOC-670",
       "type": "PI과제정의서",
       "title": "PI 과제 정의서 (심의 AX)",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [
         "T-01",
@@ -259,6 +293,12 @@
         "F-11",
         "F-12",
         "F-13",
+        "R-01",
+        "R-04",
+        "R-05",
+        "R-06",
+        "R-07",
+        "S-01",
         "U-1",
         "U-2",
         "U-3",
@@ -270,7 +310,7 @@
       "id": "DOC-680",
       "type": "로드맵이행계획",
       "title": "로드맵·이행계획",
-      "version": "0.1",
+      "version": "0.2",
       "status": "가설",
       "provides": [],
       "refs": [
@@ -375,6 +415,7 @@
       "referenced_by": [
         "DOC-620",
         "DOC-650",
+        "DOC-660",
         "DOC-670"
       ]
     },
@@ -408,6 +449,7 @@
       "referenced_by": [
         "DOC-620",
         "DOC-650",
+        "DOC-660",
         "DOC-670"
       ]
     },
@@ -415,7 +457,9 @@
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-02": {
       "provided_by": [
@@ -423,6 +467,7 @@
       ],
       "referenced_by": [
         "DOC-5.1.2",
+        "DOC-620",
         "DOC-660",
         "DOC-680"
       ]
@@ -431,55 +476,73 @@
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-04": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-05": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-06": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-07": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-08": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-09": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-10": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "D-11": {
       "provided_by": [
         "DOC-630"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-620"
+      ]
     },
     "F-01": {
       "provided_by": [
@@ -627,7 +690,12 @@
         "DOC-660"
       ],
       "referenced_by": [
+        "DOC-5.1.2",
+        "DOC-5.1.3",
+        "DOC-5.1",
         "DOC-630",
+        "DOC-650",
+        "DOC-670",
         "DOC-680"
       ]
     },
@@ -645,6 +713,7 @@
         "DOC-660"
       ],
       "referenced_by": [
+        "DOC-5.1.2",
         "DOC-630",
         "DOC-680"
       ]
@@ -653,31 +722,51 @@
       "provided_by": [
         "DOC-660"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-5.1.2",
+        "DOC-5.1",
+        "DOC-670"
+      ]
     },
     "R-05": {
       "provided_by": [
         "DOC-660"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-5.1.3",
+        "DOC-640",
+        "DOC-670"
+      ]
     },
     "R-06": {
       "provided_by": [
         "DOC-660"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-5.1.3",
+        "DOC-640",
+        "DOC-670"
+      ]
     },
     "R-07": {
       "provided_by": [
         "DOC-660"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-5.1.1",
+        "DOC-5.1.2",
+        "DOC-5.1.3",
+        "DOC-5.1",
+        "DOC-670"
+      ]
     },
     "R-08": {
       "provided_by": [
         "DOC-660"
       ],
-      "referenced_by": []
+      "referenced_by": [
+        "DOC-5.1.1"
+      ]
     },
     "R-09": {
       "provided_by": [
@@ -685,6 +774,15 @@
       ],
       "referenced_by": [
         "DOC-680"
+      ]
+    },
+    "S-01": {
+      "provided_by": [
+        "DOC-640"
+      ],
+      "referenced_by": [
+        "DOC-660",
+        "DOC-670"
       ]
     },
     "T-01": {
